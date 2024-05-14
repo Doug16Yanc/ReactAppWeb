@@ -5,6 +5,7 @@ import Owner from "./Owner";
 import Prop  from './Prop';
 import Rebanho from "./Reb";
 import Animal from './Animal';
+import Dash from './Dashboard';
 
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
       <Prop/>
       <Rebanho/>
       <Animal/>
+      <Dash/>
     </div>
   );
   }

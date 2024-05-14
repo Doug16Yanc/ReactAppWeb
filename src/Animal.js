@@ -8,6 +8,7 @@ import homeIcon from "./icons/Vector.png";
 import perfilIcon from "./icons/Group 6.png";
 import proprieIcon from "./icons/Vector-1.png";
 import animalIcon from "./icons/Vector-2.png";
+import dashIcon from "./icons/dash.png";
 import SairIcon from "./icons/out.png";
 
 const Animal = () => {
@@ -27,6 +28,7 @@ const Animal = () => {
                         <li><img src={perfilIcon} alt=""/><a href="#perfil">Meu perfil</a></li>
                         <li><img src={animalIcon} alt=""/><a href="#animais">Meus animais</a></li>
                         <li><img src={proprieIcon} alt=""/><a href="#propriedades">Minhas propriedades</a></li>
+                        <li><img src={dashIcon} alt="" width={"85px"}/><a href="/dashboard">Estatísticas gráficas</a></li>
                         <li><img src={SairIcon} alt="" width={"80px"}/><a href="#sair">Sair</a></li>
                     </ul>
                 </nav>

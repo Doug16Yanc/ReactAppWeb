@@ -1,8 +1,10 @@
-import React from "react";
-import Proprie from "./Prop";
-import Rebanho from "./Reb";
-import Animal from "./Animal";
 import './App.css';
+import React from "react";
+import Login from "./Login";
+import Owner from "./Owner";
+import Prop  from './Prop';
+import Rebanho from "./Reb";
+import Animal from './Animal';
 import Data from "./images/data.png";
 import Cidts from "./images/cidts.jpeg";
 import IFCE from "./images/ifce.png";
@@ -13,10 +15,12 @@ import animalIcon from "./icons/Vector-2.png";
 import dashIcon from "./icons/dash.png"
 import SairIcon from "./icons/out.png";
 
-const Owner = () => {
-    return (
-        <div className="data">
-            <div className="screen-owner">
+
+
+const Dash = () => {
+  return (
+    <div className="data">
+            <div className="screen-dash">
                 <div className="title">
                     Menu
                 </div>
@@ -39,31 +43,7 @@ const Owner = () => {
                     <img src={IFCE} alt="" width="250px" />
                 </div>
             </div>
-            <div className="introduce">
-                <div className="first_introduce">
-                    <img src={Data} alt="" width="450px" />
-                    <div className="text">
-                        <h1>Proprietário</h1>
-                        <h2>Antônio Felipe da Silva</h2>
-                    </div>
-                </div>
-                <div className='container'>
-                    <div className="input-wrapper">
-                        <label htmlFor="nomeCompleto">Nome completo</label>
-                        <input id="nomeCompleto" type="text" readOnly value="Antônio Felipe da Silva" />
-                    </div>
-                    <div className="input-wrapper">
-                        <label htmlFor="dataNascimento">Data de nascimento</label>
-                        <input id="dataNascimento" type="text" readOnly value="07/09/1989" />
-                    </div>
-                    <div className="input-wrapper">
-                        <label htmlFor="email">Email</label>
-                        <input id="email" type="text" readOnly value="felipeantonio09@gmail.com" />
-                    </div>
-                </div>
             </div>
-        </div>
-    );
-}
-
-export default Owner;
+  );
+  }
+export default Dash;

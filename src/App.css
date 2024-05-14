@@ -537,5 +537,36 @@ header {
   color:#4F4F4F;
 }
 
+.screen-dash{
+  padding: 20px;
+  background: #EEEEEE;
+}
 
+.screen-dash .title {
+  color: #fff;
+  background-color: #2146F6;
+  font-size: 40px;
+  text-align: center;
+}
+
+.screen-dash .foto {
+  display: flex;
+}
+
+.screen-dash p {
+  font-size: 25px;
+  margin-top: 45px;
+}
+
+.screen-dash .images {
+  border-radius: 20px;
+}
+
+.screen-dash .list ul li{
+  font-size: 25px;
+}
+
+.screen-dash .list ul li img {
+  vertical-align: middle
+}
 
