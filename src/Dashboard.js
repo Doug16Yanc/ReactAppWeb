@@ -5,6 +5,7 @@ import Owner from "./Owner";
 import Prop  from './Prop';
 import Rebanho from "./Reb";
 import Animal from './Animal';
+import Chart from "./Chart";
 import Data from "./images/data.png";
 import Cidts from "./images/cidts.jpeg";
 import IFCE from "./images/ifce.png";
@@ -42,6 +43,9 @@ const Dash = () => {
                     <img src={Cidts} alt="" width="250px" />
                     <img src={IFCE} alt="" width="250px" />
                 </div>
+            </div>
+            <div className="dash_graphics">
+                {Chart}
             </div>
             </div>
   );
