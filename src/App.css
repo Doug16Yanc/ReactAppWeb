@@ -1,38 +1,541 @@
-.App {
+* {
+  border: none;
+  box-sizing: border-box;
+  font-family: Roboto,sans-serif;
+  outline: none;
+  text-decoration: none;
+  margin-top: 5px;
+  padding: 30px;
+  text-transform: none;
+  transition: .2s linear;
+}
+
+header {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  
+}
+
+.login{
+  display: flex;
+}
+
+.login .screen {
+  text-align: center;
+  color: #fff;
+  background: #2146F6;
+
+}
+
+.login .screen .title{
+  color : #fff;
+  font-size: 40px;
+  margin-top: 30px;
+}
+.login .Login{
+  margin: auto;
+  padding: 15px;
+  width: 300px;
+}
+
+.login .Login .text-title{
+  margin-bottom: 20px;
+}
+.login .Login .text-title h1{
+  color: blue;
+  font-size: 60px;
+}
+
+.login .Login .text-title p{
+  color : gray;
+  font-size: 40px;
+}
+
+.login .Login .container{
+  display: block;
+
+}
+.login .Login .input-with-image{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.login .Login .input-with-image .content{
+  display: flex;
+}
+
+.login .Login .input-with-image label {
+  color : blue;
+  font-size: 30px;
+}
+
+.login .Login .input-with-image .content .input-border {
+  border : 2px solid blue;
+  background: gray;
+  padding: auto;
+  box-sizing: border-box;
+}
+
+.login .Login .go {
+  width: 100%;
+  height: 40px; 
+  background: #E76E35; 
+  border: none; 
+  border-radius: 25px; 
+  cursor: pointer; 
+  margin-top: 20px; 
+  transition: background 0.3s; 
+}
+
+.login .Login .go span{
+  position: absolute;
+  color: #fff;
+  font-size: 40px;
+  transform: translate(-50%, -50%);
+}
+
+.login .Login .go:hover {
+  background: red; 
+}
+
+
+.data{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.data .screen-owner{
+  padding: 20px;
+  background: #EEEEEE;
+  ;
+}
+
+.data .screen-owner .title {
+  color: #fff;
+  background-color: #2146F6;
+  font-size: 40px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.data .screen-owner .foto {
+  display: flex;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.data .screen-owner .foto p {
+  font-size: 25px;
+  margin-top: 45px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.data .screen-owner .images {
+  border-radius: 20px;
+}
+
+.data .screen-owner .list ul li{
+  font-size: 25px;
+}
+
+.data .screen-owner .list ul li img {
+  vertical-align: middle
+}
+
+.data .images{
+  display: flex;
+}
+
+
+.data .introduce{
+  padding: 20px;
+  flex-direction: column;
+}
+
+.data  .introduce .first_introduce {
+  display: flex;
+}
+
+.data .introduce .first_introduce .text {
+  display: block;
+  margin-top: 30px;
+}
+.data .introduce .first_introduce .text h1{
+  color: #4F4F4F;
+}
+.data .introduce .first_introduce .text h2{
+  color: #6A81F7;
+}
+
+.data .introduce .container{
+  color:#2146F6;
+  font-size: 25px;
+} 
+
+.data .introduce .container .input-wrapper{
+  margin-bottom: 10px;
+}
+
+.data .introduce .container .input-wrapper label {
+  font-weight: bold; 
+  font-size: 25px;
+  margin-bottom: 15px; 
+  display: block;
+}
+
+.data .introduce .container .input-wrapper input{
+  width: 100%; 
+  padding: 5px;
+  border: 3px solid #2146F6;
+  resize: vertical;
+  top : 700px;
+  padding : 10px;
+  font-size: 25px;
+  color: #647378;
+}
+
+
+.screen-prop{
+  padding: 20px;
+  background: #EEEEEE;
+  ;
+}
+
+.screen-prop .title {
+  color: #fff;
+  background-color: #2146F6;
+  font-size: 40px;
+  text-align: center;
+}
+
+.screen-prop .foto {
+  display: flex;
+}
+
+.screen-prop .foto p {
+  font-size: 25px;
+  margin-top: 45px;
+}
+
+.screen-prop .images {
+  border-radius: 20px;
+}
+
+.screen-prop .list ul li{
+  font-size: 25px;
+}
+
+.screen-prop .list ul li img {
+  vertical-align: middle
+}
+
+
+.data-prod{
+  padding: 20px;
+  flex-direction: column;
+}
+
+.data-prod .data-prod-with-image {
+  display: flex;
+}
+
+.data-prod .data-prod-with-image img {
+  width: 500px;
+}
+
+.data-prod .data-prod-with-image .text{
+  display: block;
+  margin-top: 30px;
+}
+.data-prod .data-prod-with-image .text h1{
+  color: #6A81F7;
+}
+
+.data-prod .labels-data{
+  color:#2146F6;
+  font-size: 25px;
+} 
+
+.data-prod .labels-data .input-wrapper {
+  margin-bottom: 10px;
+}
+
+
+.data-prod .labels-data .input-wrapper label {
+  font-weight: bold; 
+  font-size: 25px;
+  margin-bottom: 15px; 
+  display: block;
+}
+
+.data-prod .labels-data .input-wrapper input{
+  width: 100%; 
+  padding: 5px;
+  border: 3px solid #2146F6;
+  resize: vertical;
+  top : 700px;
+  padding : 10px;
+  font-size: 25px;
+  color: #647378;
+}
+
+.screen-rebanho{
+  padding: 20px;
+  background: #EEEEEE;
+}
+
+.screen-rebanho .title {
+  color: #fff;
+  background-color: #2146F6;
+  font-size: 40px;
+  text-align: center;
+}
+
+.screen-rebanho .foto {
+  display: flex;
+}
+
+.screen-rebanho p {
+  font-size: 25px;
+  margin-top: 45px;
+}
+
+.screen-rebanho .images {
+  border-radius: 20px;
+}
+
+.screen-rebanho .list ul li{
+  font-size: 25px;
+}
+
+.screen-rebanho .list ul li img {
+  vertical-align: middle
+}
+
+.data .data-rebanho{
+  padding : 20px;
+  flex-direction: column;
+}
+
+.data .data-rebanho .data-rebanho-with-image{
+  display: flex;
+}
+
+.data .data-rebanho .data-rebanho-with-image img{
+  width: 100px;
+}
+
+.data .data-rebanho .data-rebanho-with-image h1{
+  color: #4F4F4F;
+  font-size: 25px;
+}
+
+.data .data-rebanho .text{
+  color:#4F4F4F;
+  font-size: 22px;
+}
+
+.data .data-rebanho .labels input{
+  margin-right: 10px;
+  margin-bottom: 50px;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  width: 100%; 
+  padding: 5px;
+  border: 3px solid #2146F6;
+  resize: vertical;
+  top : 700px;
+  padding : 10px;
+  font-size: 25px;
+  color: #647378;
+}
+.screen-animal{
+  padding: 20px;
+  background: #EEEEEE;
+}
+
+.screen-animal .title {
+  color: #fff;
+  background-color: #2146F6;
+  font-size: 40px;
+  text-align: center;
+}
+
+.screen-animal .foto {
+  display: flex;
+}
+
+.screen-animal p {
+  font-size: 25px;
+  margin-top: 45px;
+}
+
+.screen-animal .images {
+  border-radius: 20px;
+}
+
+.screen-animal .list ul li{
+  font-size: 25px;
+}
+
+.screen-animal .list ul li img {
+  vertical-align: middle
+}
+
+.data-animal{
+  padding: 20px;
+  flex-direction: column;
+}
+
+.animal-data-with-image {
+  display: block;
+}
+
+.animal-data-with-image h1{
+  color: #4F4F4F;
+  font-size: 40px;
+  text-align: center;
+}
+
+.box-data-animal {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.box-data-animal .data1{
+  display: flex;
+}
+
+.box-data-animal .data1 label{
+  color:#2146F6;
+  font-weight: bold; 
+  font-size: 25px;
+  margin-bottom: 15px; 
+  display: block;
+}
+
+.box-data-animal .data1 label input{
+  width: 100%; 
+  padding: 5px;
+  border: 3px solid #2146F6;
+  resize: vertical;
+  top : 700px;
+  padding : 10px;
+  font-size: 25px;
+  color: #647378;
+}
+
+.box-data-animal .data1 label h1{
+  color: #647378;
+  font-size: 20px;
+}
+.box-data-animal .data2 {
+  display: flex;
+}
+
+.box-data-animal .data2 label{
+  color:#2146F6;
+  font-weight: bold; 
+  font-size: 25px;
+  margin-bottom: 15px; 
+  display: block;
+}
+
+.box-data-animal .data2 label input{
+  width: 100%; 
+  padding: 5px;
+  border: 3px solid #2146F6;
+  resize: vertical;
+  top : 700px;
+  padding : 10px;
+  font-size: 25px;
+  color: #647378;
+}
+.box-data-animal .data3{
+  display: flex;
+}
+
+.box-data-animal .data3 label{
+  color:#2146F6;
+  font-weight: bold; 
+  font-size: 25px;
+  margin-bottom: 15px; 
+  display: block;
+}
+
+.box-data-animal .data3 label input{
+  width: 100%; 
+  padding: 5px;
+  border: 3px solid #2146F6;
+  resize: vertical;
+  top : 700px;
+  padding : 10px;
+  font-size: 25px;
+  color: #647378;
+}
+
+.box-data-animal .data3 label h1{
+  color: #647378;
+  font-size: 20px;
+}
+
+.box-data-animal .data4{
+  display: flex;
+}
+
+.box-data-animal .data4 label{
+  color:#2146F6;
+  font-weight: bold; 
+  font-size: 25px;
+  margin-bottom: 15px; 
+  display: block;
+}
+
+.box-data-animal .data4 label input{
+  width: 100%; 
+  padding: 5px;
+  border: 3px solid #2146F6;
+  resize: vertical;
+  top : 700px;
+  padding : 10px;
+  font-size: 25px;
+  color: #647378;
+}
+
+.box-data-animal .data4 label h1{
+  color: #647378;
+  font-size: 20px;
+}
+.box-data-animal .data5 label{
+  margin:auto;
+  color:#2146F6;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.box-data-animal .data5 label .rounded-button{
+  border: none;
+  background-color: #E76E35;
   color: white;
+  padding: 20px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  outline: none;
+  margin-right: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.box-data-animal .data5 label h1{
+  font-size: 20px;
+  color:#2146F6;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.box-data-animal .data5 label h2{
+  font-size: 20px;
+  color:#4F4F4F;
 }
+
+
+
