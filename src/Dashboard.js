@@ -5,7 +5,9 @@ import Owner from "./Owner";
 import Prop  from './Prop';
 import Rebanho from "./Reb";
 import Animal from './Animal';
-import Chart from "./Chart";
+import ChartBar from "./ChartBar";
+import ChartHeat from './ChartHeatMap';
+import ChartPie from './CharPie';
 import Data from "./images/data.png";
 import Cidts from "./images/cidts.jpeg";
 import IFCE from "./images/ifce.png";
@@ -44,8 +46,9 @@ const Dash = () => {
                     <img src={IFCE} alt="" width="250px" />
                 </div>
             </div>
-            <div className="dash_graphics">
-                {Chart}
+            <div className="dash-graphics">
+                <ChartBar/>
+                <ChartHeat/>
             </div>
             </div>
   );
