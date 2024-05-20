@@ -1,55 +1,30 @@
 import './App.css';
 import React from "react";
-import Bode from "./images/bode.jpeg"
+import Bode from "./images/bode.jpeg";
 import In from "./icons/in.png";
 import Pass from "./icons/pass.png";
 
-
 const Login = () => {
     return (
-        <header className='login'>
+        <div>
+            <header className='login'>
                 <div className='screen'>
                     <div className='title'>
-                        RZ-Bode
+                        Bem-vindo(a) à versão web
                     </div>
                     <div className="image">
-                    <img src= {Bode} alt=""></img>
+                        <img src={Bode} alt="Bode" />
                     </div>
                 </div>
-                <div className='Login'>
-                    <div className='text-title'>
-                        <h1>
-                            Bem vindo!
-                        </h1>
-                        <p>
-                            Fazer login
-                        </p>
-                    </div>
-                    <div className='container'>
-                    <div className='input-with-image'>
-                    <label>
-                        Login
-                        <div className='content'>
-                            <img src={In} alt="" />
-                            <input type="text" placeholder="Login" className="input-border"/>                          
+                <div className="credentials">
+                        <div className="input-box">
+                            <input type="text" name="username" placeholder="Login" required />
+                            <input type="password" placeholder="Senha" required />
                         </div>
-                    </label>
-                    <label>
-                        Senha
-                        <div className='content'>
-                            <img src={Pass} alt="" />
-                            <input type="password" placeholder="Senha" className="input-border"/>
-                        </div>
-                    </label>
+                        <input type="submit" value="Entrar" className="btn" />
                     </div>
-                    </div>
-                    <button className="go">
-                        <span>
-                            Entrar
-                        </span>
-                    </button>
-                </div>
-        </header>
+            </header>
+        </div>
     );
 }
 

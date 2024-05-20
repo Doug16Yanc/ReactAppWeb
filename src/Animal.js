@@ -13,28 +13,15 @@ import SairIcon from "./icons/out.png";
 
 const Animal = () => {
     return (
-        <div className="data">
-            <div className="screen-animal">
-                <div className="title">
-                    Menu
-                </div>
-                <div className="foto">
-                    <img src={Data} alt="" width="250px" />
-                    <p>Antônio Felipe da Silva</p>
-                </div>
-                <nav className="list">
-                    <ul>
-                        <li><img src={homeIcon} alt=""/><a href="#home">Home</a></li>
-                        <li><img src={perfilIcon} alt=""/><a href="#perfil">Meu perfil</a></li>
-                        <li><img src={animalIcon} alt=""/><a href="#animais">Meus animais</a></li>
-                        <li><img src={proprieIcon} alt=""/><a href="#propriedades">Minhas propriedades</a></li>
-                        <li><img src={dashIcon} alt="" width={"85px"}/><a href="/dashboard">Estatísticas gráficas</a></li>
-                        <li><img src={SairIcon} alt="" width={"80px"}/><a href="#sair">Sair</a></li>
-                    </ul>
-                </nav>
-                <div className="images">
-                    <img src={Cidts} alt="" width="250px" />
-                    <img src={IFCE} alt="" width="250px" />
+        <div>
+         <div className="header">
+                <a href="#" className="logo">Rumin Web</a>
+                <i className="fa-solid fa-bars" id="menu-icons"></i>
+                <div className="navbar" id="navbar">
+                    <a href="#perfil">Perfil</a>
+                    <a href="#services">Propriedades</a>
+                    <a href="#skills">Animais</a>
+                    <a href="#education">Estatísticas</a>
                 </div>
             </div>
             <div className="data-animal">
@@ -43,7 +30,7 @@ const Animal = () => {
                     <img src={Cabra} alt=""/>
                 </div>
                 <div className="box-data-animal">
-                    <div className="data1">
+                    <div className="data">
                         <label>
                             Número de identificação
                             <input id="identificacao" type="text" readOnly value="" />
@@ -52,8 +39,6 @@ const Animal = () => {
                             Data de nascimento
                             <input id="nascimento" type="text" readOnly value="" />
                         </label>
-                    </div>
-                    <div className="data2">
                         <label>
                             Peso atual
                             <input id="peso-atual" type="text" readOnly value="" />
@@ -62,8 +47,6 @@ const Animal = () => {
                             Data de desmame
                             <input id="desmame" type="text" readOnly value="" />
                         </label>
-                        </div>
-                        <div className="data3">
                             <label>
                                 Raça
                                 <input id="raca" type="text" readOnly value="" />
@@ -72,8 +55,6 @@ const Animal = () => {
                                 Categoria
                                 <input id="categoria" type="text" readOnly value="" />
                             </label>
-                        </div>
-                        <div className="data4">
                         <label>
                             Peso ao nascimento
                             <input id="pesoNascimento" type="text" readOnly value="" />
@@ -81,21 +62,32 @@ const Animal = () => {
                         <label>
                             Peso ao desmame
                             <input id="pesoDesmame" type="text" readOnly value="" />
-                        </label>
-                        </div>
-                        <div className="data5">
-                            <label>
-                            <h1>Tipo</h1>
-                            <button className="rounded-button"></button>
-                            <h2>Caprino</h2>
-                            <h1>Sexo</h1>
-                            <button className="rounded-button"></button>
-                            <h2>Feminino</h2>
                             </label>
+                            </div>
+                        <div className="data1">
+                            <label>
+                            <h1>Tipo </h1>
+                            <button className="rounded-button"></button>
+                            <h2> Caprino </h2>
+                            <h1> Sexo </h1>
+                            <button className="rounded-button"></button>
+                            <h2>Feminino </h2>
+                            </label>
+                        </div>
                     </div>
                 </div>
+                <div class="footer">
+         <div className="author">
+        <div className="copyright">
+            <img src={Cidts} alt=""/> 
+            <img src={IFCE} alt=""/>
             </div>
-        </div>
+            <div className="text">
+            All Right Reserved
+            </div>
+          </div>  
+    </div>
+    </div>
     );
 }
 

@@ -10,44 +10,31 @@ import homeIcon from "./icons/Vector.png";
 import perfilIcon from "./icons/Group 6.png";
 import proprieIcon from "./icons/Vector-1.png";
 import animalIcon from "./icons/Vector-2.png";
-import dashIcon from "./icons/dash.png"
+import dashIcon from "./icons/dash.png";
 import SairIcon from "./icons/out.png";
 
 const Owner = () => {
     return (
-        <div className="data">
-            <div className="screen-owner">
-                <div className="title">
-                    Menu
-                </div>
-                <div className="foto">
-                    <img src={Data} alt="" width="250px" />
-                    <p>Antônio Felipe da Silva</p>
-                </div>
-                <nav className="list">
-                    <ul>
-                        <li><img src={homeIcon} alt=""/><a href ="/home">Home</a></li>
-                        <li><img src={perfilIcon} alt=""/><a href="/perfil">Meu perfil</a></li>
-                        <li><img src={animalIcon} alt=""/><a href="/animais">Meus animais</a></li>
-                        <li><img src={proprieIcon} alt=""/><a href="/propriedades">Minhas propriedades</a></li>
-                        <li><img src={dashIcon} alt="" width={"85px"}/><a href="/dashboard">Estatísticas gráficas</a></li>
-                        <li><img src={SairIcon} alt="" width={"80px"}/><a href="/sair">Sair</a></li>
-                    </ul>
-                </nav>
-                <div className="images">
-                    <img src={Cidts} alt="" width="250px" />
-                    <img src={IFCE} alt="" width="250px" />
+        <div>
+            <div className="header">
+                <a href="#" className="logo">Rumin Web</a>
+                <i className="fa-solid fa-bars" id="menu-icons"></i>
+                <div className="navbar" id="navbar">
+                    <a href="#perfil">Perfil</a>
+                    <a href="#services">Propriedades</a>
+                    <a href="#skills">Animais</a>
+                    <a href="#education">Estatísticas</a>
                 </div>
             </div>
             <div className="introduce">
-                <div className="first_introduce">
-                    <img src={Data} alt="" width="450px" />
+                <div className="first-introduce">
+                    <img src={Data} alt="Dados" width="450px" />
                     <div className="text">
                         <h1>Proprietário</h1>
                         <h2>Antônio Felipe da Silva</h2>
                     </div>
                 </div>
-                <div className='container'>
+                <div className="container">
                     <div className="input-wrapper">
                         <label htmlFor="nomeCompleto">Nome completo</label>
                         <input id="nomeCompleto" type="text" readOnly value="Antônio Felipe da Silva" />
@@ -62,7 +49,18 @@ const Owner = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        <div class="footer">
+         <div className="author">
+        <div className="copyright">
+            <img src={Cidts} alt=""/> 
+            <img src={IFCE} alt=""/>
+            </div>
+            <div className="text">
+            All Right Reserved
+            </div>
+          </div>  
+    </div>
+    </div>
     );
 }
 
